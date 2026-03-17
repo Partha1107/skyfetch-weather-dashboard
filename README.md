@@ -13,7 +13,7 @@ Concepts Used
 - Event listeners
 - Async/await
 - Fetch API
-- Error handling with try/catch
+- Error handling with try/catch   
 - DOM manipulation
 
 Testing Performed
