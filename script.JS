@@ -47,3 +47,8 @@ async function getWeather() {
 
     loading.style.display = "none";
 }
+cityInput.addEventListener("keypress", function(e){
+    if(e.key === "Enter"){
+        getWeather();
+    }
+});
