@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>SkyFetch Weather Dashboard</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SkyFetch Weather</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <h1>SkyFetch Weather Dashboard</h1>
+  <div class="container">
+    <h1>🌤 SkyFetch Weather Dashboard</h1>
 
-  <div class="search-box">
-    <input type="text" id="city-input" placeholder="Enter city name" />
-    <button id="search-btn">Search</button>
+    <div class="search-box">
+      <input type="text" id="city-input" placeholder="Enter city name" />
+      <button onclick="handleSearch()">Search</button>
+    </div>
+
+    <div id="recent-container" class="recent"></div>
+
+    <div id="weather-result" class="weather"></div>
   </div>
-
-  <div id="current-weather" class="card"></div>
-
-  <h2>5-Day Forecast</h2>
-  <div id="forecast"></div>
 
   <script src="script.js"></script>
 </body>
